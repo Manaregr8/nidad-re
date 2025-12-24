@@ -23,9 +23,9 @@ export default function Home() {
       <Hero2/>
       <Hero3/>
       {/* <Hero6 /> */}
-      <Hero8 />
       <ImgSlider />
       <Hero9 />
+      <Hero8 />
     </main>
   );
 }

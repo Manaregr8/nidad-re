@@ -16,7 +16,7 @@ export const courses = [
     fullDescription:
       "This comprehensive 12-month diploma program is designed for beginners and working professionals who want to build a strong foundation in Data Science and AI. Master Python, R, Machine Learning, Deep Learning, SQL, Statistics and BI tools through hands-on real-world projects. Career outcomes include Data Scientist, ML Engineer, and AI Specialist roles.",
     instructor: {
-      name: "Dr. Shagun",
+      name: "Miss. Shagun",
       title: "Lead Instructor, Data Science",
       bio: "PhD in AI with 15+ years of industry experience in machine learning and data science",
       image: "/uploads/Shagun4-removebg-preview (1).png",
@@ -133,7 +133,7 @@ export const courses = [
     fullDescription:
       "This comprehensive 12-month diploma program is ideal for aspiring data analysts. Master Excel, SQL, Python, Statistics, Machine Learning and Power BI through hands-on work with real business datasets. Career outcomes include Data Analyst, Business Analyst, and Analytics Consultant roles.",
     instructor: {
-      name: "Dr. Shagun",
+      name: "Miss. Shagun",
       title: "Lead Instructor, Data Science",
       bio: "PhD in AI with 15+ years of industry experience",
       image: "/uploads/Shagun4-removebg-preview (1).png",
@@ -242,7 +242,7 @@ export const courses = [
     fullDescription:
       "This intensive 6-month advanced certification is designed for professionals with basic analytics knowledge looking to specialize in Data Science and AI. Deep-dive into advanced Machine Learning, AI model deployment, and sophisticated statistical techniques. Career outcomes include mid-level Data Science and AI roles.",
     instructor: {
-      name: "Dr. Shagun",
+      name: "Miss. Shagun",
       title: "Lead Instructor, Data Science",
       bio: "PhD in AI with 15+ years of industry experience",
       image: "/uploads/Shagun4-removebg-preview (1).png",
@@ -344,7 +344,7 @@ export const courses = [
     fullDescription:
       "This advanced 6-month certification is perfect for analytics professionals looking to upskill. Gain advanced expertise in data modeling, Machine Learning applications, advanced dashboards, and BI tools. Career outcomes include Senior Data Analyst and Analytics Consultant roles.",
     instructor: {
-      name: "Dr. Shagun",
+      name: "Miss. Shagun",
       title: "Lead Instructor, Data Science",
       bio: "PhD in AI with 15+ years of industry experience",
       image: "/uploads/Shagun4-removebg-preview (1).png",
@@ -818,7 +818,7 @@ export const courses = [
     fullDescription:
       "This advanced 3-month program elevates your data storytelling capabilities. Master advanced techniques in Tableau and Power BI to present data clearly, persuasively, and with maximum impact. Career outcomes include Data Visualization Engineer and Analytics Consultant roles.",
     instructor: {
-      name: "Dr. Shagun",
+      name: "Miss. Shagun",
       title: "Lead Instructor, Data Science",
       bio: "PhD in AI with 15+ years of industry experience",
       image: "/uploads/Shagun4-removebg-preview (1).png",
