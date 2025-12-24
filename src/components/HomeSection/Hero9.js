@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import styles from './Hero9.module.css';
 
 const testimonials = [
@@ -124,7 +125,12 @@ const TestimonialsColumn = ({ testimonials, duration, className, speed }) => {
   );
 };
 
+
 const Hero9 = () => {
+  const router = useRouter();
+  const handleKickstart = () => {
+    router.push('/course');
+  };
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
@@ -164,8 +170,8 @@ const Hero9 = () => {
 
         {/* CTA Button */}
         <div className={styles.ctaWrapper}>
-          <button className={styles.ctaButton}>
-            <span className={styles.ctaText}>Kickstart Your Career</span>
+          <button className={styles.ctaButton} onClick={handleKickstart}>
+           <span className={styles.ctaText}>Kickstart Your Career</span>
             <svg 
               className={styles.ctaIcon} 
               width="20" 

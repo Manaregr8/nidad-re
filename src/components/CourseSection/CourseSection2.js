@@ -47,11 +47,24 @@ const CourseSection2 = () => {
       filtered = filtered.filter((course) => course.level === activeTab);
     }
 
-    // Sort
-    if (sortBy === "newest") {
-      filtered.sort((a, b) => b.id - a.id);
-    } else if (sortBy === "rating") {
-      filtered.sort((a, b) => b.rating - a.rating);
+    // Sort by duration: 12, 6, 3 months
+    const durationOrder = { '12 months': 1, '6 months': 2, '3 months': 3 };
+    filtered.sort((a, b) => {
+      const aOrder = durationOrder[a.duration?.toLowerCase()] || 99;
+      const bOrder = durationOrder[b.duration?.toLowerCase()] || 99;
+      if (aOrder !== bOrder) return aOrder - bOrder;
+      // fallback to newest
+      return b.id - a.id;
+    });
+
+    // If sortBy is rating, sort by rating within duration group
+    if (sortBy === "rating") {
+      filtered.sort((a, b) => {
+        const aOrder = durationOrder[a.duration?.toLowerCase()] || 99;
+        const bOrder = durationOrder[b.duration?.toLowerCase()] || 99;
+        if (aOrder !== bOrder) return aOrder - bOrder;
+        return b.rating - a.rating;
+      });
     }
 
     return filtered;
@@ -166,7 +179,7 @@ const CourseSection2 = () => {
               <span className={styles.toggleSlider} />
               <span className={styles.checkboxText}>3 months</span>
             </label>
-            <label className={styles.toggleLabel}>
+            {/* <label className={styles.toggleLabel}>
               <input
                 type="checkbox"
                 checked={selectedDuration.includes("3-4 months")}
@@ -176,7 +189,7 @@ const CourseSection2 = () => {
               />
               <span className={styles.toggleSlider} />
               <span className={styles.checkboxText}>3-4 months</span>
-            </label>
+            </label> */}
             <label className={styles.toggleLabel}>
               <input
                 type="checkbox"
@@ -250,7 +263,7 @@ const CourseSection2 = () => {
           <div className={styles.contentHeader}>
             <div className={styles.headerTop}>
               <div>
-                <h1 className={styles.mainTitle}>IT & Software Courses</h1>
+                <h1 className={styles.mainTitle}>AI & Data Science Courses</h1>
                 <p className={styles.mainSubtitle}>
                   Explore our curated IT and software programs — from short certifications to full diplomas.
                 </p>
@@ -312,7 +325,8 @@ const CourseSection2 = () => {
 
           {/* Card Grid (Responsive 3/2/1 columns) */}
           <div className={styles.courseGridStatic}>
-            {filteredCourses.map((course) => (
+            {/* Show diploma courses first, then certificates */}
+            {[...filteredCourses.filter(c => c.level === "diploma"), ...filteredCourses.filter(c => c.level !== "diploma")].map((course) => (
               <Link 
                 key={course.id} 
                 href={`/course/${course.id}`} 
@@ -320,12 +334,13 @@ const CourseSection2 = () => {
               >
                 <div className={styles.courseImage}>
                   <img src={course.image} alt={course.title} />
-                  {course.level === "certificate" && (
+                  {course.level === "diploma" && (
                     <span className={styles.bestsellerBadge}>BESTSELLER</span>
                   )}
                 </div>
 
                 <div className={styles.cardContent}>
+
                   <h3 className={styles.courseTitle}>{course.title}</h3>
                   <p className={styles.instructorName}>NIDADS Academy</p>
 
@@ -340,15 +355,11 @@ const CourseSection2 = () => {
                     <span className={styles.courseDuration}>{course.duration}</span>
                   </div>
 
-                  <div className={styles.priceRow}>
-                    <span className={styles.currentPrice}>{course.price}</span>
-                    <span className={styles.originalPrice}>{course.monthlyPrice ? `₹${(parseInt(course.price.replace(/[^\d]/g, '')) + 10000).toLocaleString()}` : ''}</span>
+                  {/* Redesigned card bottom row: tag and full-width CTA */}
+                  <div className={styles.cardActionsRow}>
+                    <span className={styles.cardTag}>{course.level === "diploma" ? "Diploma" : "Certificate"}</span>
                   </div>
-                  {course.monthlyPrice && (
-                    <div className={styles.monthlyPayment}>
-                      or <span className={styles.monthlyPrice}>{course.monthlyPrice}/month</span>
-                    </div>
-                  )}
+                  <button className={styles.cardCtaBtnFull} tabIndex={0} aria-label={`View details for ${course.title}`}>View Details</button>
                 </div>
               </Link>
             ))}

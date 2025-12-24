@@ -89,13 +89,13 @@
 .menuIcon {
   width: 24px;
   height: 2px;
-  background: linear-gradient(to right, #02375B, #0163B8);
+  background: linear-gradient(to right, #ffffff, #eff8ff);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
 
 .menuButton:hover .menuIcon {
-  background: linear-gradient(to right, #0163B8, #02375B);
+  background: linear-gradient(to right, #edeff0, #ffffff);
 }
 
 /* Mobile Menu */

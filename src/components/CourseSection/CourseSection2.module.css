@@ -1,3 +1,45 @@
+.instructorRow {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0 0 8px 0;
+}
+.cardTagRow {
+  margin: 6px 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cardDescription {
+  font-size: 13px;
+  color: #b6c2d6;
+  margin: 6px 0 0 0;
+  min-height: 36px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cardCtaBtnFull {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 14px;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.08);
+  letter-spacing: 0.5px;
+}
+.cardCtaBtnFull:hover, .cardCtaBtnFull:focus {
+  background: #2563eb;
+}
 .courseSection {
   padding: 80px 20px;
   color: #e5f0ff;
@@ -523,33 +565,40 @@
   margin-left: auto;
 }
 
-.priceRow {
+
+/* Redesigned card bottom row */
+.cardActionsRow {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 8px;
+  justify-content: space-between;
+  margin-top: 18px;
+  gap: 12px;
 }
 
-.currentPrice {
-  font-size: 22px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.originalPrice {
-  font-size: 15px;
-  color: #64748b;
-  text-decoration: line-through;
-}
-
-.monthlyPayment {
+.cardTag {
+  background: #e0e7ef;
+  color: #1e293b;
   font-size: 13px;
-  color: #94a3b8;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 999px;
+  letter-spacing: 0.5px;
 }
 
-.monthlyPrice {
-  color: #3b82f6;
+.cardCtaBtn {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.08);
+}
+.cardCtaBtn:hover, .cardCtaBtn:focus {
+  background: #2563eb;
 }
 
 /* ========== NO RESULTS ========== */

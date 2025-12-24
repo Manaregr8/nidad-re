@@ -226,7 +226,7 @@ const CourseSection1 = () => {
               />
               <div className={styles.imageOverlay}>
                 <div className={styles.instructorInfo}>
-                  <h4>mrs. Shagun</h4>
+                  <h4>miss. Shagun</h4>
                   <p>Lead Instructor, Data Science</p>
                   <div className={styles.credentials}>
                     <div className={styles.credentials}>

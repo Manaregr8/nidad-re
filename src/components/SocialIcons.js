@@ -6,7 +6,7 @@ export default function SocialIcons() {
     <div className={styles.socialContainer}>
       {/* Instagram */}
       <a
-        href="https://instagram.com/your-profile"
+        href="https://www.instagram.com/nidads_official?igsh=YXg4cG1yODB2cTJ6"
         target="_blank"
         rel="noopener noreferrer"
         className={`${styles.socialIcon} ${styles.instagram}`}

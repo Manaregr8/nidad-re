@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState, use } from "react";
+import dynamic from "next/dynamic";
+const PopupEnquiryForm = dynamic(() => import("@/components/PopupEnquiryForm.jsx"), { ssr: false });
 import Link from "next/link";
 import { getCourseById, courses } from "@/data/courses";
 import styles from "./courseDetail.module.css";
@@ -9,6 +11,7 @@ export default function CourseDetailPage({ params }) {
   const { id } = use(params);
   const course = getCourseById(id);
   const [expandedModule, setExpandedModule] = useState(null);
+  const [showEnquiry, setShowEnquiry] = useState(false);
 
   if (!course) {
     return (
@@ -283,34 +286,25 @@ export default function CourseDetailPage({ params }) {
                 </div>
               </div>
 
+
               <div className={styles.priceSection}>
-                <div className={styles.priceRow}>
-                  <div>
-                    <div className={styles.priceLabel}>Full Payment</div>
-                    <div className={styles.priceAmount}>{course.price}</div>
-                    <div className={styles.oldPrice}>
-                      ₹
-                      {parseInt(
-                        course.price.replace(/[₹,]/g, ""),
-                        10
-                      ) + 10000}
-                      <span className={styles.discount}> 8% off</span>
-                    </div>
-                  </div>
-                  <div>
-                    <div className={styles.priceLabel}>Easy Installments</div>
-                    <div className={styles.installmentAmount}>
-                      {course.monthlyPrice}{" "}
-                      <span className={styles.installmentPeriod}>/month</span>
-                    </div>
-                    <div className={styles.installmentNote}>
-                      12 monthly payments
-                    </div>
+                <div className={styles.installmentInfoBox}>
+                  <strong>Easy Installment Option:</strong>
+                  <div style={{marginTop: 6, color: '#b6c2d6', fontSize: 14}}>
+                    Pay your course fee in easy monthly installments. Flexible plans available for all students. Contact us for more details!
                   </div>
                 </div>
               </div>
 
-              <button className={styles.enrollButton}>Enroll now</button>
+              <button className={styles.enrollButton} onClick={() => setShowEnquiry(true)}>Enroll now</button>
+              {showEnquiry && (
+                <PopupEnquiryForm 
+                  open={showEnquiry} 
+                  onClose={() => setShowEnquiry(false)} 
+                  selectedCourseId={course.id}
+                  lockCourse={true}
+                />
+              )}
 
               <div className={styles.includesSection}>
                 <h4 className={styles.includesTitle}>
@@ -485,25 +479,16 @@ export default function CourseDetailPage({ params }) {
                     <span>{c.students} learners</span>
                   </div>
                   <div className={styles.recoMetaRow}>
-                    <span className={styles.recoPrice}>{c.price}</span>
-                    <span className={styles.recoDurationChip}>
-                      {c.duration}
-                    </span>
+                    <span className={styles.recoDurationChip}>{c.duration}</span>
                   </div>
-                  {/* Discount and EMI info */}
-                  <div className={styles.recoMetaRow}>
-                    <span style={{ color: '#4ade80', fontWeight: 600, fontSize: 13 }}>
-                      20% OFF
-                    </span>
-                    <span style={{ color: '#64748b', fontSize: 12, textDecoration: 'line-through', marginLeft: 6 }}>
-                      ₹{parseInt(c.price.replace(/[^\d]/g, '')) * 1.25}
-                    </span>
-                  </div>
-                  <div className={styles.recoMetaRow}>
-                    <span style={{ color: '#4ade80', fontWeight: 600, fontSize: 13 }}>
-                      EMI: {c.monthlyPrice ? c.monthlyPrice : '₹10,000'}/mo
-                    </span>
-                  </div>
+                  <button
+                    className={styles.recoViewBtn}
+                    style={{marginTop:12, width:'100%', background:'#3b82f6', color:'#fff', border:'none', borderRadius:8, padding:'10px 0', fontWeight:600, fontSize:15, cursor:'pointer', letterSpacing:'0.5px'}}
+                    tabIndex={0}
+                    aria-label={`View details for ${c.title}`}
+                  >
+                    View Details
+                  </button>
                 </div>
               </Link>
             ))}

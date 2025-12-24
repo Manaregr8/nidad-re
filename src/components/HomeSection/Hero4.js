@@ -20,37 +20,37 @@ export default function Hero4() {
     {
       id: 1,
       title: 'Python Programming Fundamentals',
-      image: '/uploads/IMG_4064.jpeg',
+      image: '/uploads/center/6.webp',
       size: ''
     },
     {
       id: 2,
       // title: 'Data Analysis with Pandas & NumPy',
-      image: '/uploads/infra1.jpeg',
+      image: '/uploads/center/IMG_4078.webp',
       size: 'large'
     },
     {
       id: 3,
       title: 'Statistical Analysis & Probability',
-      image: '/uploads/infra3.jpeg',
+      image: '/uploads/center/IMG_4072.webp',
       size: 'medium'
     },
     {
       id: 4,
       title: 'Machine Learning Algorithms',
-      image: '/uploads/infra2.jpeg',
+      image: '/uploads/center/IMG_4071.webp',
       size: 'large'
     },
     {
       id: 5,
       title: 'Data Visualization with Matplotlib & Seaborn',
-      image: '/uploads/IMG_4080.jpeg',
+      image: '/uploads/center/IMG_4081.webp',
       size: 'medium'
     },
     {
       id: 6,
       title: 'Computer Vision & Image Recognition',
-      image: '/uploads/IMG_4070.jpeg',
+      image: '/uploads/center/6.webp',
       size: ''
     },
     

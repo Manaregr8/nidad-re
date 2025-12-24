@@ -1,6 +1,6 @@
 .hero {
-  min-height: 100vh;
-  padding: 80px 20px;
+  min-height: 60vh;
+  padding: 48px 12px;
   position: relative;
   overflow: hidden;
 }
@@ -56,7 +56,7 @@
 
 .description {
   font-size: 16px;
-  color: #a0a0a0;
+  color: #ffffff;
   max-width: 700px;
   margin: 0;
   line-height: 1.7;
@@ -155,7 +155,8 @@
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .hero {
-    padding: 60px 20px;
+    min-height: 50vh;
+    padding: 36px 10px;
   }
   
   .title {
@@ -169,7 +170,8 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 50px 20px;
+    min-height: 40vh;
+    padding: 24px 6px;
   }
   
   .hero::before {
@@ -221,8 +223,11 @@
 
 @media (max-width: 480px) {
   .hero {
-    padding: 40px 16px;
+    min-height: 30vh;
+    padding: 12px 30px;
+    margin-top: 0;
   }
+  
   
   .badge {
     padding: 6px 12px;

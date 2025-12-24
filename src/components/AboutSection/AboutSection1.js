@@ -1,8 +1,8 @@
 import styles from "./aboutSection1.module.css";
 
 // Add your actual image URLs here
-const philosophyImg = "/uploads/IMG_4070.jpeg";
-const mainImg = "/uploads/IMG_4064.jpeg";
+const philosophyImg = "/uploads/center/IMG_4072.webp";
+const mainImg = "/uploads/center/IMG_4081.webp";
 const principal1Img = "/uploads/IMG_4065.jpeg";
 const principal2Img = "/uploads/IMG_4070.jpeg";
 

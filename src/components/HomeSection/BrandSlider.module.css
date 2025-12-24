@@ -2,26 +2,28 @@
   width: 100vw;
   max-width: 100vw;
   overflow: hidden;
-  background: transparent;
   margin: 0;
-  padding: 0.5rem 0 0.5rem 0;
+  margin-bottom: 50px;
+  padding: 8px 0;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
   box-sizing: border-box;
-  margin-bottom: 50px;
+  background: #dfdcdc;
 }
 
-.slider {
+/* continuous marquee track */
+.track {
   display: flex;
   align-items: center;
   gap: 48px;
-  animation: slideBrands 28s linear infinite;
-  will-change: transform;
-  min-width: 1200px;
+  width: max-content;
+  animation: scrollBrands 25s linear infinite;
 }
+
+/* logos */
 
 .logoItem {
   flex: 0 0 auto;
@@ -31,54 +33,70 @@
   min-width: 120px;
   height: 56px;
   padding: 0 12px;
-  opacity: 0.85;
+  opacity: 0.9;
   transition: opacity 0.2s, transform 0.2s;
   box-sizing: border-box;
 }
 
 .logoItem img {
   max-height: 40px;
-  max-width: 100px;
+  max-width: 110px;
   object-fit: contain;
-  /* filter: grayscale(1) brightness(1.1); */
   transition: filter 0.2s, transform 0.2s;
 }
 
 .logoItem:hover img {
-  filter: grayscale(0) brightness(1.2);
+  filter: brightness(1.15);
   transform: scale(1.08);
 }
 
-@keyframes slideBrands {
+/* keyframes: move left by half track length (because we duplicated array) */
+@keyframes scrollBrands {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
 }
 
+/* Mobile: bigger logos, less gap but same infinite loop */
+
 @media (max-width: 600px) {
   .sliderWrapper {
-    padding: 0.3rem 0 0.3rem 0;
+    padding: 12px 0;
   }
-  .slider {
-    gap: 20px;
-    min-width: 600px;
+
+  .track {
+    gap: 24px;
+    animation-duration: 18s; /* thoda fast */
   }
+
   .logoItem {
-    min-width: 60px;
-    height: 32px;
-    padding: 0 4px;
+    min-width: 160px;
+    height: 72px;
+    padding: 0 8px;
   }
+
   .logoItem img {
-    max-height: 20px;
-    max-width: 40px;
+    max-height: 52px;
+    max-width: 140px;
   }
 }
 
 @media (max-width: 350px) {
-  .slider { min-width: 320px; gap: 8px; }
-  .logoItem { min-width: 32px; height: 18px; }
-  .logoItem img { max-height: 12px; max-width: 20px; }
+  .track {
+    gap: 16px;
+    animation-duration: 16s;
+  }
+
+  .logoItem {
+    min-width: 140px;
+    height: 64px;
+  }
+
+  .logoItem img {
+    max-height: 46px;
+    max-width: 130px;
+  }
 }

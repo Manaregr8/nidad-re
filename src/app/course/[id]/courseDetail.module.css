@@ -1,3 +1,13 @@
+.installmentInfoBox {
+  background: rgba(59, 130, 246, 0.08);
+  border-radius: 10px;
+  padding: 18px 16px 14px 16px;
+  margin-bottom: 18px;
+  color: #2563eb;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.06);
+}
 .container {
   max-width: 1400px;
   margin: 0 auto;
