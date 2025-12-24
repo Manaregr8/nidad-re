@@ -137,73 +137,73 @@ const CourseSection1 = () => {
             </p>
 
             {/* Enhanced Stats with Icons */}
-          <div className={styles.stats}>
-  {/* Students Trained */}
-  <div className={styles.statItem}>
-    <div className={styles.statIcon}>
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-        <path
-          d="M4 18v-1c0-2.2 3.6-4 8-4s8 1.8 8 4v1"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
-        <circle cx="12" cy="7" r="4" stroke="currentColor" strokeWidth="1.8" />
-      </svg>
-    </div>
-    <h3>10000+</h3>
-    <p>Students Trained</p>
-  </div>
+            <div className={styles.stats}>
+              {/* Students Trained */}
+              <div className={styles.statItem}>
+                <div className={styles.statIcon}>
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M4 18v-1c0-2.2 3.6-4 8-4s8 1.8 8 4v1"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                    />
+                    <circle cx="12" cy="7" r="4" stroke="currentColor" strokeWidth="1.8" />
+                  </svg>
+                </div>
+                <h3>10000+</h3>
+                <p>Students Trained</p>
+              </div>
 
-  {/* Placement Rate */}
-  <div className={styles.statItem}>
-    <div className={styles.statIcon}>
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-        <path
-          d="M4 16l4-4 4 3 6-7"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M20 20H4"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
-      </svg>
-    </div>
-    <h3>95%</h3>
-    <p>Placement Rate</p>
-  </div>
+              {/* Placement Rate */}
+              <div className={styles.statItem}>
+                <div className={styles.statIcon}>
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M4 16l4-4 4 3 6-7"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M20 20H4"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </div>
+                <h3>95%</h3>
+                <p>Placement Rate</p>
+              </div>
 
-  {/* Industry Partners */}
-  <div className={styles.statItem}>
-    <div className={styles.statIcon}>
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-        <path
-          d="M8 12l2 2 6-6"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <rect
-          x="3"
-          y="6"
-          width="18"
-          height="12"
-          rx="2"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        />
-      </svg>
-    </div>
-    <h3>50+</h3>
-    <p>Industry Partners</p>
-  </div>
-</div>
+              {/* Industry Partners */}
+              <div className={styles.statItem}>
+                <div className={styles.statIcon}>
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M8 12l2 2 6-6"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <rect
+                      x="3"
+                      y="6"
+                      width="18"
+                      height="12"
+                      rx="2"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                    />
+                  </svg>
+                </div>
+                <h3>50+</h3>
+                <p>Industry Partners</p>
+              </div>
+            </div>
 
 
             <div className={styles.ctaButtons}>
@@ -231,45 +231,45 @@ const CourseSection1 = () => {
                   <div className={styles.credentials}>
                     <div className={styles.credentials}>
 
-  <span className={styles.credentialItem}>
-    <svg
-      className={styles.credentialIcon}
-      width="20"
-      height="20"
-      viewBox="0 0 24 24"
-      aria-hidden="true"
-    >
-      <rect
-        x="7"
-        y="6"
-        width="10"
-        height="4"
-        rx="1"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-      />
-      <rect
-        x="4"
-        y="9"
-        width="16"
-        height="11"
-        rx="2"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-      />
-      <path
-        d="M10 13h4"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
-    </svg>
-    15+ Years Experience
-  </span>
-</div>
+                      <span className={styles.credentialItem}>
+                        <svg
+                          className={styles.credentialIcon}
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <rect
+                            x="7"
+                            y="6"
+                            width="10"
+                            height="4"
+                            rx="1"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="1.8"
+                          />
+                          <rect
+                            x="4"
+                            y="9"
+                            width="16"
+                            height="11"
+                            rx="2"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="1.8"
+                          />
+                          <path
+                            d="M10 13h4"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="1.8"
+                            strokeLinecap="round"
+                          />
+                        </svg>
+                        15+ Years Experience
+                      </span>
+                    </div>
 
                   </div>
                 </div>
