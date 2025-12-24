@@ -251,9 +251,9 @@ export default function Hero() {
         </header>
 
         <p className={styles.description}>
-          Launch your career with practical Data Analytics & AI training aligned
-          to industry needs. Gain job-ready skills in SQL, Python, Power BI,
-          Excel and Machine Learning through real-world projects.
+          Build job-ready skills in SQL, Python, Power BI, Excel & Machine Learning 
+through real business projects, not just theory.
+Learn what top companies actually hire for
           </p>
           <div style={{ width: '100%', display: 'flex', justifyContent: 'center', margin: '1.2rem 0' }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '1.2rem', fontSize: 14, fontWeight: 500 }}>

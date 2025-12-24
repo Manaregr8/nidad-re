@@ -65,7 +65,17 @@ export default function Hero4() {
       </h1>
       
       <p className={styles.description}>
-        Our training replicates a real professional analytics environment, not a traditional classroom. You’ll work in advanced labs using industry-standard tools like Python, R, SQL, and leading BI platforms on high-end systems. Each module is designed as a live business project, following agile workflows with clear goals, timelines, and continuous mentor feedback. Through real-world case studies such as sales forecasting, customer churn, and financial analysis, you gain hands-on, job-ready experience. Dedicated one-on-one mentors guide you throughout, providing support similar to an experienced industry team lead.
+        Experience real analytics workflows in a setup that mirrors the workplace.
+
+Work on high-end systems using Python, R, SQL, Power BI
+
+Build live business projects with real deadlines & mentor reviews
+
+Solve actual case studies in sales, churn, and financial analysis
+
+Get guided like a junior analyst by dedicated 1:1 mentors
+
+Learn the way top data teams work — not the way textbooks teach.
       </p>
 
       <div className={styles.grid}>

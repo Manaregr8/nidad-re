@@ -10,7 +10,7 @@ export const courses = [
     students: 450,
     price: "₹99,999",
     monthlyPrice: "₹8,499",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop",
+    image: "/uploads/nidad-cource card/Diploma in Data Science & AI.png",
     description:
       "For beginners and working pros alike. Master Python, R, Machine Learning, Deep Learning, SQL, Statistics and BI tools through real projects.",
     fullDescription:
@@ -127,7 +127,7 @@ export const courses = [
     students: 520,
     price: "₹89,999",
     monthlyPrice: "₹9,000",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop",
+    image: "/uploads/nidad-cource card/Diploma in Data Analytics & AI (12 Months) SQL.png",
     description:
       "Ideal for future analysts. Learn Excel, SQL, Python, Statistics, Machine Learning and Power BI with business datasets.",
     fullDescription:
@@ -236,7 +236,7 @@ export const courses = [
     students: 380,
     price: "₹79,999",
     monthlyPrice: "₹13,333",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=200&fit=crop",
+    image: "/uploads/nidad-cource card/Advanced Certification in Data Science & AI (6 Months).png",
     description:
       "For candidates with basic analytics knowledge. Deep-dive into advanced ML, AI model deployment and statistical techniques.",
     fullDescription:
@@ -338,7 +338,7 @@ export const courses = [
     students: 290,
     price: "₹69,999",
     monthlyPrice: "₹11,666",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop",
+    image: "/uploads/nidad-cource card/Advanced Certification in Data Analytics & AI (6 Months).png",
     description:
       "For upskillers in analytics. Gain advanced expertise in data modeling, ML applications, dashboards and BI tools.",
     fullDescription:
@@ -440,7 +440,7 @@ export const courses = [
     students: 680,
     price: "₹49,999",
     monthlyPrice: "₹16,666",
-    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=200&fit=crop",
+    image: "/uploads/nidad-cource card/Certification in Data Analytics & AI (3 Months).png",
     description:
       "Intensive fundamentals course. Cover Excel, SQL, Python basics, data visualization and statistical analysis.",
     fullDescription:
@@ -533,7 +533,7 @@ export const courses = [
     students: 540,
     price: "₹39,999",
     monthlyPrice: "₹13,333",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=200&fit=crop",
+    image: "/uploads/nidad-cource card/Applied Data Analytics with Python & SQL (3 Months).png",
     description:
       "Focused training on Python data libraries and SQL querying. Analyze and visualize data to derive insights.",
     fullDescription:
@@ -626,7 +626,7 @@ export const courses = [
     students: 720,
     price: "₹29,999",
     monthlyPrice: "₹10,000",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop",
+    image: "/uploads/nidad-cource card/Business Intelligence with Power BI (3 Months).png",
     description:
       "Become a Power BI expert. Learn data modeling, DAX formulas and interactive dashboard design.",
     fullDescription:
@@ -719,7 +719,7 @@ export const courses = [
     students: 410,
     price: "₹34,999",
     monthlyPrice: "₹11,666",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop",
+    image: "/uploads/nidad-cource card/Data Science for Product Managers (3 Months).png",
     description:
       "Analytics for PMs. Learn to use data in product decisions, run A/B tests, track KPIs, and interpret user data.",
     fullDescription:
@@ -812,7 +812,7 @@ export const courses = [
     students: 350,
     price: "₹44,999",
     monthlyPrice: "₹14,999",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop",
+    image: "/uploads/nidad-cource card/Advanced Data Visualization (3 Months).png",
     description:
       "Elevate your storytelling. Master Tableau and Power BI advanced techniques to present data clearly and persuasively.",
     fullDescription:
